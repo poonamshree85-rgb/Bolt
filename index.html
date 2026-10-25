@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d0c" />
+    <meta name="description" content="Official Minecraft Launcher — a clean home for your Java Edition library and downloads." />
+    <title>Official Minecraft Launcher</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-lockup">
+          <img src="/logo.svg" alt="Official Minecraft Launcher logo" class="brand-logo" />
+          <div><span class="brand-kicker">OFFICIAL</span><strong>MINECRAFT<br />LAUNCHER</strong></div>
+        </div>
+        <nav class="side-nav" aria-label="Primary navigation">
+          <button class="nav-item is-active" data-view="home"><span class="nav-mark">▦</span>Home</button>
+          <button class="nav-item" data-view="downloads"><span class="nav-mark">↓</span>Downloads</button>
+          <button class="nav-item" data-view="library"><span class="nav-mark">◈</span>Library</button>
+          <button class="nav-item" data-view="settings"><span class="nav-mark">⚙</span>Settings</button>
+        </nav>
+        <div class="sidebar-footer"><div class="account-chip"><div class="avatar">S</div><div><strong>Steve</strong><small>Local profile</small></div><span class="online-dot"></span></div><span class="build-label">BUILD 1.0.0 · JAVA</span></div>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div><p class="eyebrow">JAVA EDITION / HUB</p><h1 id="view-title">Welcome back, Steve.</h1></div><div class="top-actions"><button class="icon-button" aria-label="Notifications">◌<span class="notification-dot"></span></button><button class="profile-button">S <span>PROFILE</span>⌄</button></div></header>
+        <section class="hero-panel" aria-label="Featured Minecraft version"><div class="hero-copy"><span class="status-pill"><i></i> READY TO PLAY</span><h2>BUILD YOUR<br /><span>OWN WORLD.</span></h2><p>Explore the latest Java Edition release with your saved profiles, worlds, and custom content all in one place.</p><div class="hero-actions"><button class="primary-button" data-action="play">▶ PLAY LATEST</button><button class="secondary-button" data-action="manage">MANAGE PROFILE</button></div></div><div class="hero-art" aria-hidden="true"><div class="pixel-sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div><div class="pixel-tree tree-one"></div><div class="pixel-tree tree-two"></div><div class="ground-line"></div><div class="version-badge"><small>SELECTED VERSION</small><strong>1.21.4</strong><span>VANILLA · STABLE</span></div></div></section>
+        <section class="section-head"><div><p class="eyebrow">CONTENT HUB</p><h2>Downloads</h2></div><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search content" aria-label="Search downloads" /></label></section>
+        <section class="content-grid" id="content-grid" aria-label="Download categories"><button class="content-card" data-name="Mods" data-detail="Gameplay extensions"><span class="card-icon">✦</span><span><strong>Mods</strong><small>Gameplay extensions</small></span><span class="card-arrow">→</span></button><button class="content-card" data-name="Shader Packs" data-detail="Visual upgrades"><span class="card-icon">◒</span><span><strong>Shader Packs</strong><small>Visual upgrades</small></span><span class="card-arrow">→</span></button><button class="content-card" data-name="Resource Packs" data-detail="Change your look"><span class="card-icon">▧</span><span><strong>Resource Packs</strong><small>Change your look</small></span><span class="card-arrow">→</span></button><button class="content-card" data-name="Game Versions" data-detail="Manage installations"><span class="card-icon">◇</span><span><strong>Game Versions</strong><small>Manage installations</small></span><span class="card-arrow">→</span></button><button class="content-card" data-name="Worlds & Saves" data-detail="Your adventures"><span class="card-icon">▣</span><span><strong>Worlds &amp; Saves</strong><small>Your adventures</small></span><span class="card-arrow">→</span></button><button class="content-card featured-card" data-name="Discover" data-detail="Browse community content"><span class="card-icon">+</span><span><strong>Discover</strong><small>Browse community content</small></span><span class="card-arrow">→</span></button></section>
+        <div class="bottom-row"><section class="activity-panel"><div class="panel-heading"><h3>RECENT ACTIVITY</h3><button>VIEW ALL</button></div><div class="activity-item"><span class="activity-icon">↓</span><div><strong>Fabric Loader 0.16.9</strong><small>Installed just now</small></div><span class="activity-state">READY</span></div><div class="activity-item"><span class="activity-icon">◈</span><div><strong>Survival Island</strong><small>World saved yesterday</small></div><span class="activity-state">SAVED</span></div></section><section class="quick-panel"><span class="eyebrow">QUICK TIP</span><p>Keep your profiles organized so every world loads with the right mods.</p><button class="text-button">OPEN HELP →</button></section></div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div><script src="/app.js"></script>
+  </body>
+</html>
