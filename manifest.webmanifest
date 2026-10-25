@@ -1,0 +1,11 @@
+{
+  "name": "Offical Minecraft Lancher",
+  "short_name": "Offical Lancher",
+  "description": "A dark, pixel-styled Java Edition launcher hub.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#090b0a",
+  "theme_color": "#9dff45",
+  "icons": [{"src":"/logo.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
